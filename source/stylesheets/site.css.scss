@@ -5,6 +5,7 @@
   border-radius: 25px;
   transition: 0.3s;
 }
+
 body {
     background-image: url("../images/background.jpeg");
     background-repeat: no-repeat;
@@ -33,9 +34,14 @@ body {
   widows: 30px;
 }
 
-h1 {
+.title {
   font-family: 'Arimo', sans-serif;
   color: white;
   font-size: 100px;
+  text-align: center;
+  margin-top: 20%
+}
 
+body, html {
+    height: 100%;
 }
