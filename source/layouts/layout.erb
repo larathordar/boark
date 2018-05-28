@@ -5,18 +5,27 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+
+    <title><%= current_page.data.title || "BÓ Arkitektar" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <div class="wrapper">
-      <a href="#" class="nav">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-      </a>
+    <nav role="navigation">
+    <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+      <a href="#"><li>Heim</li></a>
+      <a href="umokkur.html"><li>Um Okkur</li></a>
+      <a href="#"><li>Verkefni</li></a>
+      <a href="#"><li>Hafðu Samband</li></a>
+    </ul>
+  </div>
+</nav>
     <%= yield %>
   </body>
 </html>
